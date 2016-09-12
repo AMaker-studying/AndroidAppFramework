@@ -1,9 +1,13 @@
 package com.aiteu.framework.demo;
 
+import com.aiteu.framework.image.ChooseImageActivity;
+
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainActivity extends Activity {
 
@@ -11,6 +15,13 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		findViewById(R.id.pictureLib).setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(MainActivity.this, ChooseImageActivity.class));
+			}
+		});
 	}
 
 	@Override

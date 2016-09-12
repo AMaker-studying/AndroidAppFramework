@@ -9,8 +9,9 @@
     tools:context="com.aiteu.framework.demo.MainActivity" >
 
     <TextView
+        android:id="@+id/pictureLib"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="照片库" />
 
 </RelativeLayout>
